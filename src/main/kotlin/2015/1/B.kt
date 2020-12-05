@@ -15,8 +15,8 @@ What is the position of the character that causes Santa to first enter the basem
  **/
 
 fun main() {
-    assert(algorithm(")") == 1)
-    assert(algorithm("()())") == 5)
+    check(algorithm(")") == 1)
+    check(algorithm("()())") == 5)
 
 
     val input = File("src/main/resources/2015_1").readText()

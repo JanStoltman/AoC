@@ -19,15 +19,15 @@ To what floor do the instructions take Santa?
  **/
 
 fun main() {
-    assert(algorithm("(())") == 0)
-    assert(algorithm("()()") == 0)
-    assert(algorithm("(((") == 3)
-    assert(algorithm("(()(()(") == 3)
-    assert(algorithm("))(((((") == 3)
-    assert(algorithm("())") == -1)
-    assert(algorithm("))") == -1)
-    assert(algorithm(")))") == -3)
-    assert(algorithm(")())())") == -1)
+    check(algorithm("(())") == 0)
+    check(algorithm("()()") == 0)
+    check(algorithm("(((") == 3)
+    check(algorithm("(()(()(") == 3)
+    check(algorithm("))(((((") == 3)
+    check(algorithm("())") == -1)
+    check(algorithm("))") == -1)
+    check(algorithm(")))") == -3)
+    check(algorithm(")())())") == -1)
 
     val input = File("src/main/resources/2015_1").readText()
     println(algorithm(input))
